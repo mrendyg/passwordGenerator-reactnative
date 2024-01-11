@@ -5,9 +5,9 @@ import { MainPage } from './pages/mainpage';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <View>
-        <Text>Generador de contraseñas</Text>
+    <View style={styles.pricipalPage}>
+      <View  style={styles.titulo}>
+        <Text style={styles.tituloText}>Generador de contraseñas</Text>
       </View>
       <MainPage/>
     </View>
@@ -15,11 +15,17 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  pricipalPage: {
+    top: 80
   },
+
+  titulo: {
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
+  tituloText: {
+    fontSize: 25
+  }
 
 });
